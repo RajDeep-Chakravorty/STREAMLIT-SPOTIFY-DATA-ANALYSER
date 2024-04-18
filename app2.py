@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import base64
+import requests
 
 # Set page configuration
 st.set_page_config(

@@ -41,7 +41,7 @@ def set_bg_from_file(image_path):
         st.error(f"Error loading background image: {e}")
 
 # Call the function to set background image
-image_path = "D:\PROJECTS\END TO END DEPLOYMENT PROJECTS\STREAMLIT SPOTIFY DATA ANALYSER\Background_image2.jpg"  # Replace with your image path
+image_path = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image path
 set_bg_from_file(image_path)
 
 # Add space for logo and center align

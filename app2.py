@@ -34,6 +34,8 @@ def set_bg_from_url(image_url):
                 .stApp {{
                     background: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
+                    font-family: 'Arial', sans-serif;
+                    color: #333333;
                 }}
                 </style>
                 """,
@@ -48,19 +50,19 @@ image_url = "https://i.postimg.cc/52hLnvCs/Background-image2.jpg"  # Replace wit
 set_bg_from_url(image_url)
 
 # Add space for logo and center align
-st.markdown("<div style='text-align: center;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; padding-top: 20px; padding-bottom: 20px;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)
 
 # Title and caption
-st.markdown("<div style='text-align: center;'><h1>Spotify Data Analyzer</h1><p><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'><h1 style='font-size: 48px; color: #1DB954;'>Spotify Data Analyzer</h1><p style='font-size: 24px; color: #666666;'><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
 
 # Introduction and instructions section
 st.markdown('''
 <div style='text-align: center;'>
-<h2>Introduction</h2>
-<p>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
+<h2 style='font-size: 36px; color: #1DB954;'>Introduction</h2>
+<p style='font-size: 18px;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
 
-<h2>How to Request Your Spotify Data</h2>
-<p>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank">link</a> and sign in to your Spotify account<br>
+<h2 style='font-size: 36px; color: #1DB954;'>How to Request Your Spotify Data</h2>
+<p style='font-size: 18px;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
 Scroll down, check the box for "Account Data"<br>
 Click on "Request"<br>
 You will receive a few files from Spotify. Take the one named "StreamingHistory0"<br>
@@ -72,8 +74,8 @@ Enjoy your insights!</p>
 # Define page options
 pages = ["Analysis by Time", "Analysis by Artist and Song"]
 
-# Sidebar to select analysis type
-selected_page = st.selectbox("Select Analysis Type", pages)
+# Tabs for selecting page
+selected_page = st.radio("Select Analysis Type", pages)
 
 # If "Analysis by Time" page is selected
 if selected_page == "Analysis by Time":

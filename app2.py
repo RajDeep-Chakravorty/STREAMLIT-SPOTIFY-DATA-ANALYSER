@@ -24,23 +24,26 @@ def set_bg_from_url(image_url):
     '''
     try:
         response = requests.get(image_url)
-        image_data = response.content
-        encoded_image = base64.b64encode(image_data).decode()
-        st.markdown(
-            f"""
-            <style>
-            .stApp {{
-                background: url('data:image/jpg;base64,{encoded_image}');
-                background-size: cover;
-            }}
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
+        if response.status_code == 200:
+            image_data = response.content
+            encoded_image = base64.b64encode(image_data).decode()
+            st.markdown(
+                f"""
+                <style>
+                .stApp {{
+                    background: url('data:image/jpeg;base64,{encoded_image}');
+                    background-size: cover;
+                }}
+                </style>
+                """,
+                unsafe_allow_html=True
+            )
+        else:
+            st.error("Failed to fetch image from URL.")
     except Exception as e:
         st.error(f"Error loading background image from URL: {e}")
 
-# Call the function to set background image
+# Call the function to set background image from URL
 image_url = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image URL
 set_bg_from_url(image_url)
 

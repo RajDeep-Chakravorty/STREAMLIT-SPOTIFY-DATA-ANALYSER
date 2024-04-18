@@ -11,38 +11,37 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Function to set background image from file
-def set_bg_from_file(image_path):
+def set_bg_from_url(image_url):
     '''
-    A function to load an image from file and set it as the background.
-    
+    A function to load an image from URL and set it as the background.
+
     Parameters:
-        image_path (str): The path to the image file on your system.
-    
+        image_url (str): The URL of the image.
+
     Returns:
         The background.
     '''
     try:
-        with open(image_path, "rb") as f:
-            image_data = f.read()
-            encoded_image = base64.b64encode(image_data).decode()
-            st.markdown(
-                f"""
-                <style>
-                .stApp {{
-                    background: url('data:image/jpg;base64,{encoded_image}');
-                    background-size: cover;
-                }}
-                </style>
-                """,
-                unsafe_allow_html=True
-            )
+        response = requests.get(image_url)
+        image_data = response.content
+        encoded_image = base64.b64encode(image_data).decode()
+        st.markdown(
+            f"""
+            <style>
+            .stApp {{
+                background: url('data:image/jpg;base64,{encoded_image}');
+                background-size: cover;
+            }}
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
     except Exception as e:
-        st.error(f"Error loading background image: {e}")
+        st.error(f"Error loading background image from URL: {e}")
 
 # Call the function to set background image
-image_path = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image path
-set_bg_from_file(image_path)
+image_url = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image URL
+set_bg_from_url(image_url)
 
 # Add space for logo and center align
 st.markdown("<div style='text-align: center;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)

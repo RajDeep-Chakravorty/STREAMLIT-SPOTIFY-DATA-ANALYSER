@@ -44,7 +44,7 @@ def set_bg_from_url(image_url):
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://rb.gy/t331pa"  # Replace with your image URL
+image_url = "https://i.postimg.cc/52hLnvCs/Background-image2.jpg"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 # Add space for logo and center align

@@ -47,7 +47,7 @@ def set_bg_from_url(image_url):
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/spotify-on-laptop.jpg"  # Replace with your image URL
+image_url = "https://i.pinimg.com/564x/75/90/07/759007c0f2d8f959a3cd1af42a47dba7.jpg"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 

@@ -44,7 +44,7 @@ def set_bg_from_url(image_url):
         st.error(f"Error loading background image from URL: {e}")
 
 # Call the function to set background image from URL
-image_url = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image URL
+image_url = "https://i.imgur.com/fjfnPyW.jpeg"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 # Add space for logo and center align

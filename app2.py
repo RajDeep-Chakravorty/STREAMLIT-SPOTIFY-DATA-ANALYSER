@@ -12,6 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Function to set background image
 def set_bg_from_url(image_url):
     '''
     A function to load an image from URL and set it as the background.
@@ -39,12 +40,11 @@ def set_bg_from_url(image_url):
                 unsafe_allow_html=True
             )
         else:
-            st.error("Failed to fetch image from URL.")
+            st.error("Failed to fetch image from URL. Status code: {}".format(response.status_code))
     except Exception as e:
-        st.error(f"Error loading background image from URL: {e}")
-
+        st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://i.imgur.com/fjfnPyW.jpeg"  # Replace with your image URL
+image_url = "https://i.imgur.com/Ib2mqxl.jpeg"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 # Add space for logo and center align

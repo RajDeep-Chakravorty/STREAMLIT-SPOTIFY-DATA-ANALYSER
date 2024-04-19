@@ -4,6 +4,14 @@ import altair as alt
 import base64
 import requests
 
+# Set page configuration
+st.set_page_config(
+    page_title="Spotify Data Analyzer",
+    page_icon="https://symbl-world.akamaized.net/i/webp/df/6766b8646eb16b761cb590d752e6b2.webp",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # Function to set background image with blur effect
 def set_bg_with_blur(image_url):
     '''
@@ -41,14 +49,6 @@ def set_bg_with_blur(image_url):
 # Call the function to set background image with blur effect from URL
 image_url = "https://helios-i.mashable.com/imagery/articles/04Xg9z0OpmENu16hFQ4XGcs/hero-image.fill.size_1248x702.v1652732411.png"  # Replace with your image URL
 set_bg_with_blur(image_url)
-
-# Set page configuration
-st.set_page_config(
-    page_title="Spotify Data Analyzer",
-    page_icon="https://symbl-world.akamaized.net/i/webp/df/6766b8646eb16b761cb590d752e6b2.webp",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 
 # Add space for logo and center align

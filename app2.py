@@ -31,24 +31,12 @@ def set_bg_with_blur(image_url):
             st.markdown(
                 f"""
                 <style>
-                .bg-container {{
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
+                body {{
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
                     filter: blur(8px); /* Adjust the blur intensity as needed */
-                    z-index: -1;
-                }}
-                .content {{
-                    position: relative;
-                    z-index: 1;
                 }}
                 </style>
-                <div class="bg-container"></div>
-                <div class="content">
                 """,
                 unsafe_allow_html=True
             )

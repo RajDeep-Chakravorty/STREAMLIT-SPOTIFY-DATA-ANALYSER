@@ -31,19 +31,21 @@ def set_bg_with_blur(image_url):
             st.markdown(
                 f"""
                 <style>
-                .bg-container {{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
+                body {{
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
-                    filter: blur(2px); /* Adjust the blur intensity as needed */
-                    z-index: -1; /* Ensure it's behind other content */
+                    filter: blur(8px); /* Adjust the blur intensity as needed */
+                }}
+                .content {{
+                    position: relative;
+                    z-index: 1;
+                    background-color: rgba(255, 255, 255, 0.5); /* Add transparency to the content container */
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 }}
                 </style>
-                <div class="bg-container"></div>
+                <div class="content">
                 """,
                 unsafe_allow_html=True
             )

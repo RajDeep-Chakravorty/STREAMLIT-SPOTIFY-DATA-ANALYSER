@@ -26,7 +26,8 @@ def set_bg_with_blur(image_url):
                 .stApp {{
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
-                    backdrop-filter: blur(100px); /* Adjust the blur intensity as needed */
+                    backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+                    color: white; /* Set text color to white */
                 }}
                 </style>
                 """,
@@ -54,16 +55,16 @@ st.set_page_config(
 st.markdown("<div style='text-align: center; padding-top: 20px; padding-bottom: 20px;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)
 
 # Title and caption
-st.markdown("<div style='text-align: center;'><h1 style='font-size: 48px; color: #1DB954;'>Spotify Data Analyzer</h1><p style='font-size: 24px; color: black;'><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'><h1 style='font-size: 48px; color: #1DB954;'>Spotify Data Analyzer</h1><p style='font-size: 24px; color: white;'><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
 
 # Introduction and instructions section
 st.markdown('''
 <div style='text-align: center;'>
-<h2 style='font-size: 36px; color: black;'>Introduction</h2>
-<p style='font-size: 18px;color: Red;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
+<h2 style='font-size: 36px; color: white;'>Introduction</h2>
+<p style='font-size: 18px;color: white;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
 
-<h2 style='font-size: 36px; color: black;'>How to Request Your Spotify Data</h2>
-<p style='font-size: 18px; color: Red;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
+<h2 style='font-size: 36px; color: white;'>How to Request Your Spotify Data</h2>
+<p style='font-size: 18px; color: white;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
 Scroll down, check the box for "Account Data"<br>
 Click on "Request"<br>
 You will receive a few files from Spotify. Take the one named "StreamingHistory0"<br>

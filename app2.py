@@ -13,21 +13,6 @@ st.set_page_config(
 )
 
 # Function to set background image with blur effect
-import streamlit as st
-import pandas as pd
-import altair as alt
-import base64
-import requests
-
-# Set page configuration
-st.set_page_config(
-    page_title="Spotify Data Analyzer",
-    page_icon="https://symbl-world.akamaized.net/i/webp/df/6766b8646eb16b761cb590d752e6b2.webp",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# Function to set background image with blur effect
 def set_bg_with_blur(image_url):
     '''
     A function to load an image from URL and set it as the background with a blur effect.

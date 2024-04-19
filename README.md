@@ -4,7 +4,7 @@ I created a basic spotify data analyzer. Feel free to leave some feedback and le
 
 ## Preview
 ### The Project is Deployed at https://app-spotify-data-analyser.streamlit.app/
-![streamlit-app] (https://vimeo.com/936633070?share=copy)
+![streamlit-app](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamxxemMyZ3ZkamlocXF1dnI2dDd1dm5icXdiZ3R0MmluOXpibm43cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7C2RFoPvX1mR2EFfmp/giphy.gif)
 
 # Features
 

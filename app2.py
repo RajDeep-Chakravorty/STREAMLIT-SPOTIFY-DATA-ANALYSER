@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Add the text at the top right corner
-st.markdown("<div style='position: absolute; top: 0px; right: 0px; background-color: white; color: red; padding: 5px; border-radius: 5px; z-index: 1000;'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
+st.markdown("<div style='position: sticky; top: 0px; right: 0px; background-color: white; color: red; padding: 5px; border-radius: 5px; z-index: 1000;'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
 
 # Define a function to set the background image from a URL
 def set_background_image(image_url):

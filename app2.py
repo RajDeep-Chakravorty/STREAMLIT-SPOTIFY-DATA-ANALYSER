@@ -159,7 +159,7 @@ if selected_page == "Analysis by Time":
         st.altair_chart(fig0, use_container_width=True)
 
     else:
-        st.info("Please upload a Spotify data file to analyze.")
+        st.info("Please upload a Spotify data file to analyze or analyse with the example file provided!")
 
 # If "Analysis by Artist and Song" page is selected
 elif selected_page == "Analysis by Artist and Song":
@@ -212,7 +212,7 @@ elif selected_page == "Analysis by Artist and Song":
         st.altair_chart(chart, use_container_width=True)
 
     else:
-        st.info("Please upload a Spotify data file to analyze.")
+        st.info("Please upload a Spotify data file to analyze or analyse with the example file provided!")
 
 st.markdown('''
     #### Interested what your data could look like? Download my example file and try it yourself!

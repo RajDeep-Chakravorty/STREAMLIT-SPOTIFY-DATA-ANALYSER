@@ -37,10 +37,6 @@ def set_bg_from_url(image_url):
                     font-family: 'Arial', sans-serif;
                     color: #333333;
                 }}
-                .stMarkdown {{
-                    color: #ffffff !important;
-                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                }}
                 </style>
                 """,
                 unsafe_allow_html=True

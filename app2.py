@@ -12,10 +12,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Function to set background image
-def set_bg_from_url(image_url):
+# Function to set background image with blur effect
+def set_bg_with_blur(image_url):
     '''
-    A function to load an image from URL and set it as the background.
+    A function to load an image from URL and set it as the background with a blur effect.
 
     Parameters:
         image_url (str): The URL of the image.
@@ -31,15 +31,19 @@ def set_bg_from_url(image_url):
             st.markdown(
                 f"""
                 <style>
-                .stApp {{
-                    background: #f0f0f0;
+                .bg-container {{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
-                    font-family: 'Arial', sans-serif;
-                    color: #333333;
-                    filter: blur(8px);
+                    filter: blur(8px); /* Adjust the blur intensity as needed */
+                    z-index: -1; /* Ensure it's behind other content */
                 }}
                 </style>
+                <div class="bg-container"></div>
                 """,
                 unsafe_allow_html=True
             )
@@ -47,10 +51,10 @@ def set_bg_from_url(image_url):
             st.error("Failed to fetch image from URL. Status code: {}".format(response.status_code))
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
-# Call the function to set background image from URL
-image_url = "https://helios-i.mashable.com/imagery/articles/04Xg9z0OpmENu16hFQ4XGcs/hero-image.fill.size_1248x702.v1652732411.png"  # Replace with your image URL
-set_bg_from_url(image_url)
 
+# Call the function to set background image with blur effect from URL
+image_url = "https://helios-i.mashable.com/imagery/articles/04Xg9z0OpmENu16hFQ4XGcs/hero-image.fill.size_1248x702.v1652732411.png"  # Replace with your image URL
+set_bg_with_blur(image_url)
 
 
 # Add space for logo and center align

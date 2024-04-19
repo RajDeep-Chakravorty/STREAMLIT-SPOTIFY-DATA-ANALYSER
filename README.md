@@ -1,6 +1,6 @@
-# Spotify_data_analyzer
+# Spotify Data Analyser
 
-To go the app click directly click 
+To go the app click directly click [https://app-spotify-data-analyser.streamlit.app/]
 
 I created a basic spotify data analyzer. Feel free to leave some feedback and let your data be analyzed.
 

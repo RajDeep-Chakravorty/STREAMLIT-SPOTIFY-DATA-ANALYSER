@@ -47,7 +47,7 @@ def set_bg_from_url(image_url):
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://pics.craiyon.com/2023-06-23/161775159e2a4421b03a563626551f74.webp"  # Replace with your image URL
+image_url = "https://elements-video-cover-images-0.imgix.net/e2987811-46ef-4023-bb21-d20225858064/video_preview/video_preview_0000.jpg?auto=compress&h=630&w=1200&fit=crop&crop=edges&fm=jpeg&s=85b61394c12fdfff0544eebc4d3ad2c8"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 

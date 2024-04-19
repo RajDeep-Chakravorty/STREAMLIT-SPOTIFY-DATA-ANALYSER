@@ -32,10 +32,15 @@ def set_bg_from_url(image_url):
                 f"""
                 <style>
                 .stApp {{
-                    background: #f0f0f0 url('data:image/jpeg;base64,{encoded_image}') no-repeat center center;
+                    background: #f0f0f0;
+                    background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
                     font-family: 'Arial', sans-serif;
                     color: #333333;
+                }}
+                .stMarkdown {{
+                    color: #ffffff !important;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
                 }}
                 </style>
                 """,
@@ -58,11 +63,11 @@ st.markdown("<div style='text-align: center;'><h1 style='font-size: 55px; color:
 # Introduction and instructions section
 st.markdown('''
 <div style='text-align: center;'>
-<h2 style='font-size: 40px; color: red; font-weight: bold;'>Introduction</h2>
-<p style='font-size: 20px;color: white; font-weight: bold;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
+<h2 style='font-size: 40px; color: red; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>Introduction</h2>
+<p style='font-size: 20px;color: white; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
 
-<h2 style='font-size: 40px; color: red; font-weight: bold;'>How to Request Your Spotify Data</h2>
-<p style='font-size: 20px; color: black; font-weight: bold;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
+<h2 style='font-size: 40px; color: red; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>How to Request Your Spotify Data</h2>
+<p style='font-size: 20px; color: white; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
 Scroll down, check the box for "Account Data"<br>
 Click on "Request"<br>
 You will receive a few files from Spotify. Take the one named "StreamingHistory0"<br>

@@ -50,11 +50,13 @@ def set_bg_from_url(image_url):
 image_url = "https://i.postimg.cc/Y2Z8R7r2/spotify-gif-bg.gif"  # Replace with your image URL
 set_bg_from_url(image_url)
 
+
+
 # Add space for logo and center align
 st.markdown("<div style='text-align: center; padding-top: 20px; padding-bottom: 20px;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)
 
-# Title and caption with text outline
-st.markdown("<div style='text-align: center;'><h1 style='font-size: 55px; color: yellowgreen; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>Spotify Data Analyzer</h1><p style='font-size: 24px; color: magenta; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
+# Title and caption
+st.markdown("<div style='text-align: center;'><h1 style='font-size: 55px; color: yellowgreen; font-weight: bold;'>Spotify Data Analyzer</h1><p style='font-size: 24px; color: magenta; font-weight: bold;'><i>Where words fail, music speaks.</i></p></div>", unsafe_allow_html=True)
 
 # Introduction and instructions section
 st.markdown('''

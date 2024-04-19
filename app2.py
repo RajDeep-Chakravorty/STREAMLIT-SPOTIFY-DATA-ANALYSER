@@ -12,8 +12,26 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Add the text at the top right corner
-st.markdown("<div style= sticky': fixed; top: 0px; right: 0px; background-color: white; color: red; padding: 5px; border-radius: 5px; z-index: 1000;'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
+# Add the "Created By - RAJDEEP CHAKRAVORTY" text with fixed position at the top
+st.markdown(
+    """
+    <style>
+    .fixed-text {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        background-color: white;
+        color: red;
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    </style>
+    """
+    , unsafe_allow_html=True
+)
+
+st.markdown("<div class='fixed-text'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
 
 # Define a function to set the background image from a URL
 def set_background_image(image_url):

@@ -12,40 +12,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Function to set background image
-def set_bg_from_url(image_url):
-    '''
-    A function to load an image from URL and set it as the background.
+# Define a function to set the background image from a URL
+def set_background_image(image_url):
+    # Use HTML/CSS to set the background image
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url('{image_url}');
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-    Parameters:
-        image_url (str): The URL of the image.
-
-    Returns:
-        The background.
-    '''
-    try:
-        response = requests.get(image_url)
-        if response.status_code == 200:
-            image_data = response.content
-            encoded_image = base64.b64encode(image_data).decode()
-            st.markdown(
-                f"""
-                <style>
-                .stApp {{
-                    background-image: url('data:image/jpeg;base64,{encoded_image}');
-                    background-size: cover;
-                }}
-                </style>
-                """,
-                unsafe_allow_html=True
-            )
-        else:
-            st.error("Failed to fetch image from URL. Status code: {}".format(response.status_code))
-    except Exception as e:
-        st.error("Error loading background image from URL: {}".format(e))
-# Call the function to set background image from URL
-image_url = "https://i.postimg.cc/Y2Z8R7r2/spotify-gif-bg.gif"  # Replace with your image URL
-set_bg_from_url(image_url)
+# Call the function with the URL of the image you want to use as the background
+image_url = "https://i.postimg.cc/Y2Z8R7r2/spotify-gif-bg.gif"
+set_background_image(image_url)
 
 # Add space for logo and center align
 st.markdown("<div style='text-align: center; padding-top: 20px; padding-bottom: 20px;'><img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg' width='300'></div>", unsafe_allow_html=True)

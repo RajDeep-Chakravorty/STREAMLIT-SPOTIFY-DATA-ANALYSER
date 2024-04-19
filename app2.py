@@ -15,7 +15,7 @@ st.set_page_config(
 # Add the "Created By - RAJDEEP CHAKRAVORTY" text with fixed position relative to Streamlit interface
 st.markdown(
     """
-    <div style="position: fixed; top: 5px; right: 20px; z-index: 1000;">
+    <div style="position: absolute; top: 5px; right: 20px; z-index: 1000;">
         <div style="background-color: rgba(255, 255, 255, 0.7); color: red; padding: 5px; border-radius: 5px;">
             Created By - RAJDEEP CHAKRAVORTY
         </div>

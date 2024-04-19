@@ -34,7 +34,7 @@ def set_bg_with_blur(image_url):
                 .stApp {{
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
-                    backdrop-filter: blur(40px); /* Adjust the blur intensity as needed */
+                    backdrop-filter: blur(100px); /* Adjust the blur intensity as needed */
                 }}
                 </style>
                 """,

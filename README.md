@@ -3,8 +3,8 @@
 I created a basic spotify data analyzer. Feel free to leave some feedback and let your data be analyzed.
 
 ## Preview
-### The Project is Deployed at (https://app-spotify-data-analyser.streamlit.app/)
-![streamlit-app](https://github.com/RajDeep-Chakravorty/STREAMLIT-FOOD-RECOMMENDER-SYSTEM/blob/main/Food%20Recommendation%20System%20demo.gif)
+### The Project is Deployed at https://app-spotify-data-analyser.streamlit.app/
+![streamlit-app](https://github.com/RajDeep-Chakravorty/STREAMLIT-SPOTIFY-DATA-ANALYSER/blob/main/Spotify%20Analyser%20Demo.gif)
 
 # Features
 

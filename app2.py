@@ -34,7 +34,7 @@ def set_bg_from_url(image_url):
                 .stApp {{
                     background: #f0f0f0;
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
-                    background-size: cover;
+                    background-size: contain;
                     font-family: 'Arial', sans-serif;
                     color: #333333;
                 }}

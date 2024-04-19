@@ -216,16 +216,18 @@ elif selected_page == "Analysis by Artist and Song":
 
 st.markdown('''
     #### Interested what your data could look like? Download my example file and try it yourself!
-    ''')
-    with open("spotify_data_example.json", "r") as f:
-        data = f.read()
+''')
 
-    # Convert to base64
-    b64 = base64.b64encode(data.encode()).decode()
+# Load Json
+with open("spotify_data_example.json", "r") as f:
+    data = f.read()
 
-    # Create DL-Link
-    href = f'<a href="data:file/json;base64,{b64}" download="spotify_data_example.json">Download example spotify data json file</a>'
+# Convert to base64
+b64 = base64.b64encode(data.encode()).decode()
 
-    # Import Dl-Link
-    st.markdown(href, unsafe_allow_html=True)
-    
+# Create DL-Link
+href = f'<a href="data:file/json;base64,{b64}" download="spotify_data_example.json">Download example spotify data json file</a>'
+
+# Import Dl-Link
+st.markdown(href, unsafe_allow_html=True)
+

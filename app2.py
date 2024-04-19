@@ -65,7 +65,7 @@ st.markdown('''
 <p style='font-size: 20px;color: white; font-weight: bold;'>Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze your Spotify listening history. Simply upload your Spotify data, and get insightful visualizations!</p>
 
 <h2 style='font-size: 40px; color: red; font-weight: bold;'>How to Request Your Spotify Data</h2>
-<p style='font-size: 20px; color: white; font-weight: bold;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
+<p style='font-size: 20px; color: black; font-weight: bold;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
 Scroll down, check the box for "Account Data"<br>
 Click on "Request"<br>
 You will receive a few files from Spotify. Take the one named "StreamingHistory0"<br>

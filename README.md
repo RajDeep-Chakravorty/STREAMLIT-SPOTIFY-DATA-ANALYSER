@@ -1,6 +1,6 @@
 # Spotify Data Analyser
 
-This project is deployed at https://app-spotify-data-analyser.streamlit.app/
+### This project is deployed at https://app-spotify-data-analyser.streamlit.app/
 
 I created a basic spotify data analyzer. Feel free to leave some feedback and let your data be analyzed.
 

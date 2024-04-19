@@ -39,7 +39,7 @@ def set_bg_with_blur(image_url):
                     height: 100%;
                     background-image: url('data:image/jpeg;base64,{encoded_image}');
                     background-size: cover;
-                    filter: blur(8px); /* Adjust the blur intensity as needed */
+                    filter: blur(2px); /* Adjust the blur intensity as needed */
                     z-index: -1; /* Ensure it's behind other content */
                 }}
                 </style>

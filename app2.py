@@ -215,7 +215,7 @@ elif selected_page == "Analysis by Artist and Song":
         st.info("Please upload a Spotify data file to analyze or go ahead with the example file provided!")
 
 st.markdown('''
-    #### Interested what your data could look like? Download my example file and try it yourself!
+    #### Interested what your data could look like? Download my example file from the below link and try it yourself!
 ''')
 
 # Load Json

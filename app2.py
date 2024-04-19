@@ -47,7 +47,7 @@ def set_bg_from_url(image_url):
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://images.deepai.org/machine-learning-models/cd8b9f6639994b569f48a599350a985a/hologram.jpg"  # Replace with your image URL
+image_url = "https://pics.craiyon.com/2023-06-23/161775159e2a4421b03a563626551f74.webp"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 

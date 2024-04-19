@@ -217,8 +217,6 @@ elif selected_page == "Analysis by Artist and Song":
 st.markdown('''
     #### Interested what your data could look like? Download my example file and try it yourself!
     ''')
-
-    # Load Json
     with open("spotify_data_example.json", "r") as f:
         data = f.read()
 

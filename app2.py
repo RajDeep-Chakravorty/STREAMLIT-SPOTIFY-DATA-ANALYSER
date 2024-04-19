@@ -15,25 +15,14 @@ st.set_page_config(
 # Add the "Created By - RAJDEEP CHAKRAVORTY" text with fixed position relative to Streamlit interface
 st.markdown(
     """
-    <style>
-    .fixed-text-container {
-        position: fixed;
-        top: 5px;
-        right: 20px;
-        z-index: 1000;
-    }
-    .fixed-text {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: red;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    </style>
-    """
-    , unsafe_allow_html=True
+    <div style="position: fixed; top: 5px; right: 20px; z-index: 1000;">
+        <div style="background-color: rgba(255, 255, 255, 0.7); color: red; padding: 5px; border-radius: 5px;">
+            Created By - RAJDEEP CHAKRAVORTY
+        </div>
+    </div>
+    """, 
+    unsafe_allow_html=True
 )
-
-st.markdown("<div class='fixed-text-container'><div class='fixed-text'>Created By - RAJDEEP CHAKRAVORTY</div></div>", unsafe_allow_html=True)
 
 
 # Define a function to set the background image from a URL

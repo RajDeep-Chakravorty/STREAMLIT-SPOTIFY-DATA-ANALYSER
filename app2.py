@@ -47,7 +47,7 @@ def set_bg_from_url(image_url):
     except Exception as e:
         st.error("Error loading background image from URL: {}".format(e))
 # Call the function to set background image from URL
-image_url = "https://www.dropbox.com/scl/fi/d321ldbhswubj7fc70rqz/vecteezy_snow-covered-landscapes-and-mountains-in-background_24496916.jpg?rlkey=q56fqvyrz1w1ihx7twtqoj1rk&st=z3c1p0cv&dl=0"  # Replace with your image URL
+image_url = ":https://iili.io/J8STyhv.jpg"  # Replace with your image URL
 set_bg_from_url(image_url)
 
 

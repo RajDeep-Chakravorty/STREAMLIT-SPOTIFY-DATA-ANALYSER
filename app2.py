@@ -45,9 +45,9 @@ st.markdown('''
 
 <h2 style='font-size: 40px; color: red; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>How to Request Your Spotify Data</h2>
 <p style='font-size: 20px; color: white; font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;'>Open this <a href="https://www.spotify.com/de/account/privacy/" target="_blank" style='color: #1DB954;'>link</a> and sign in to your Spotify account<br>
-Scroll down, check the box for <code> "Account"</code><br>
-Click on "Request"<br>
-You will receive a few files from Spotify. Take the one named "StreamingHistory0"<br>
+Scroll down, check the box for <code> Account</code><br>
+Click on <code>Request</code><br>
+You will receive a few files from Spotify. Take the one named <code>StreamingHistory</code>"<br>
 Upload your data using the file uploader below<br>
 Enjoy your insights!</p>
 </div>

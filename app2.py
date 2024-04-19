@@ -12,6 +12,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Add the text at the top right corner
+st.markdown("<div style='position: absolute; top: 20px; right: 20px; background-color: white; color: red; padding: 5px;'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
+
 # Define a function to set the background image from a URL
 def set_background_image(image_url):
     # Use HTML/CSS to set the background image
@@ -193,8 +196,6 @@ elif selected_page == "Analysis by Artist and Song":
     else:
         st.info("Please upload a Spotify data file to analyze or go ahead with the example file provided!")
 
-# Add the text at the top right corner
-st.markdown("<div style='position: absolute; top: 20px; right: 20px; background-color: white; color: red; padding: 5px;'>Created By - RAJDEEP CHAKRAVORTY</div>", unsafe_allow_html=True)
 
 st.markdown('''
     #### Interested what your data could look like? Download my example file from the below link and try it yourself!

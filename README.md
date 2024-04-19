@@ -1,8 +1,10 @@
 # Spotify Data Analyser
 
-### This project is deployed at https://app-spotify-data-analyser.streamlit.app/
-
 I created a basic spotify data analyzer. Feel free to leave some feedback and let your data be analyzed.
+
+## Preview
+### The Project is Deployed at (https://app-spotify-data-analyser.streamlit.app/)
+![streamlit-app](https://github.com/RajDeep-Chakravorty/STREAMLIT-FOOD-RECOMMENDER-SYSTEM/blob/main/Food%20Recommendation%20System%20demo.gif)
 
 # Features
 

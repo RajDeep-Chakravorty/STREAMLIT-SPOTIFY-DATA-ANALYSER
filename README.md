@@ -57,7 +57,7 @@ streamlit run app.py
 
 Interested in what your data could look like? Download the example file from the link below and try it yourself!
 
-<a href="https://www.dropbox.com/scl/fi/l7sk9avieeyawwhy5u4j8/spotify_data_example.json?rlkey=pdozbhmb74ys9dng38a47nd31&st=sexqtmiq&dl=0" download>Click here to download the example Spotify data JSON file</a>
+<a href="https://www.dropbox.com/scl/fi/l7sk9avieeyawwhy5u4j8/spotify_data_example.json?rlkey=pdozbhmb74ys9dng38a47nd31&st=sexqtmiq&dl=1" download>Click here to download the example Spotify data JSON file</a>
 
 ## Contributed By
 

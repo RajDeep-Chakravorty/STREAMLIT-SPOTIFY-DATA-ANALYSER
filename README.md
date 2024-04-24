@@ -7,7 +7,7 @@ Welcome to the Spotify Data Analyzer, an automatic web app designed to analyze y
 ### The Project is Deployed at https://app-spotify-data-analyser.streamlit.app/
 ![streamlit-app](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamxxemMyZ3ZkamlocXF1dnI2dDd1dm5icXdiZ3R0MmluOXpibm43cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7C2RFoPvX1mR2EFfmp/giphy.gif)
 
-<a href="https://ibb.co/8jzLVsd"><img src="https://i.ibb.co/JzxwPty/Spotify-analyser-demo-1-0000.jpg" alt="Spotify-analyser-demo-1-0000" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>bild link html</a><br />
+<a href="https://ibb.co/8jzLVsd"><img src="https://i.ibb.co/JzxwPty/Spotify-analyser-demo-1-0000.jpg" alt="Spotify-analyser-demo" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pic</a><br/>
 
 
 # How to Request Your Spotify Data?

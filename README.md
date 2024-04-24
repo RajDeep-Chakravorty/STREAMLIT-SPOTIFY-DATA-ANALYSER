@@ -57,7 +57,8 @@ streamlit run app.py
 
 Interested in what your data could look like? Download the example file from the link below and try it yourself!
 
-[Download example Spotify data JSON file](data:file/json;base64)
+[Download example Spotify data JSON file](data:file/json;base64,<base64_encoded_data_here>)
+
 
 ## Contributed By
 
